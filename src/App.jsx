@@ -1,12 +1,16 @@
 import React from 'react';
-import './App.css';
+import styled from 'styled-components'
 
-function App() {
+const App = styled(({className}) => {
   return (
-    <main>
+    <div className={className}>
       <h1>Hello World</h1>
-    </main>
+    </div>
   );
-}
+})`
+  h1{
+    color: red;
+  }
+`
 
 export default App;
